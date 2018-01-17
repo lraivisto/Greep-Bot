@@ -1,7 +1,6 @@
+const urban = require('urban-dictionary')
+const Discord = require('discord.js');
 exports.run = (client, message) => {
-  
-  const urban = require('urban-dictionary')
-  const Discord = require('discord.js');
   
     var definition = message.content.split(" ").slice(1).join(" ");
 
@@ -25,7 +24,10 @@ exports.run = (client, message) => {
     
     message.channel.send(embed)
   
-  }})}
+  }
+    }
+              )
+}
 
 exports.conf = {
   enabled: true,

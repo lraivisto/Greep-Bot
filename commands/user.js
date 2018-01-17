@@ -1,6 +1,6 @@
+const Discord = require('discord.js');
 exports.run = (client, message) => {
-  
-  const Discord = require('discord.js');
+
     var mentions = message.mentions.users.filter(user=>{if(user !== client.user) return user;}).first();
     var member = message.guild.member(mentions)||message.member;
     var e = new Discord.RichEmbed()

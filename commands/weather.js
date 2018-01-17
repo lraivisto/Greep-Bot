@@ -1,7 +1,7 @@
+const Discord = require('discord.js');
+var weather = require('yahoo-weather');
 exports.run = (client, message) => {
-  
-  const Discord = require('discord.js');
-  var weather = require('yahoo-weather');
+
     let place = message.content.split(" ").slice(1).join(" ");
     
     weather(place, 'c').then(info => {
