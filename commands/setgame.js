@@ -1,4 +1,6 @@
 const settings = require('../settings.json');
+const Discord = require('discord.js');
+
 exports.run = (client, message) => {
         if(message.author.id!='396003871434211339'){
                 message.channel.send("Only the founder can execute this.") }
@@ -15,19 +17,19 @@ exports.run = (client, message) => {
     }
   });
   
-    const Discord = require('discord.js');
-    var e = new Discord.RichEmbed()
+          var e = new Discord.RichEmbed()
+  
+          .setAuthor("Game changed!")
+          .setDescription("Status has been successfully changed")
+          .addField(`Game status set to`,`\`${args.join(" ")}\``)
+          .setColor('#ECEDEE')
+          .setFooter(`Success | ${message.createdAt}`)
+          .setThumbnail(`https://cdn.discordapp.com/attachments/398185503045976064/402892855011704843/Chose_PNG_White.png`)
    
-    .setAuthor("Game changed!")
-    .setDescription("Status has been successfully changed")
-    .addField(`Game status set to`,`\`${args.join(" ")}\``)
-    .setColor('#ECEDEE')
-    .setFooter(`Success | ${message.createdAt}`)
-    .setThumbnail(`https://cdn.discordapp.com/attachments/398185503045976064/402892855011704843/Chose_PNG_White.png`)
-   
-    message.channel.send("",{embed:e});
+  message.channel.send("",{embed:e});  
     
-    message.delete();
+          message.delete();
+
         }
   
 };
