@@ -8,7 +8,7 @@ exports.run = async (client, message, args, level) => {// eslint-disable-line no
           var e = new Discord.RichEmbed()
   
           .setTitle(`Greep - Bot Shutdown`)
-          .setDescription("The bot is stopping every module safely and is now shutting down temporarily.")
+          .setDescription(`The bot is stopping every module and is now shutting down temporarily, ${message.author.username}`)
           .setColor('#ECEDEE')
           .setFooter(`Success | ${message.createdAt}`)
           .setThumbnail(`https://cdn.discordapp.com/attachments/398185503045976064/402893358655340554/Shutdown_PNG_White.png`)
@@ -31,7 +31,7 @@ exports.run = async (client, message, args, level) => {// eslint-disable-line no
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['botshut', 'shutoff', 'off', 'stop'],
+  aliases: ['botshut', 'shutoff', 'off', 'stop', 'shutbotoff'],
   permLevel: 0,
 };
 
