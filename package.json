@@ -1,0 +1,40 @@
+{
+  "name": "G-Discorrd-bot",
+  "version": "1.0.1",
+  "description": "Multipurpose discord bot.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "opusscript": "^0.0.6",
+    "simple-youtube-api": "^5.0.0",
+    "ytdl-core": "^0.18.5",
+    "chalk": "^2.3.0",
+    "discord.js": "^11.2.1",
+    "urban-dictionary": "^1.0.6",
+    "moment": "^2.20.1",
+    "ms": "^2.1.1",
+    "snekfetch": "^3.6.1",
+    "cheerio": "^0.22.0",
+    "querystring": "^0.2.0",
+    "yahoo-weather": "^2.2.2",
+    "moment-duration-format": "^2.1.1",
+    "google-translate-api": "^2.3.0",
+    "canvas-constructor": "^0.3.0",
+    "fs-nextra": "^0.3.2",
+    "canvas": "^1.6.9"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/welcome-project"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "node",
+    "express"
+  ]
+}
