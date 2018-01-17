@@ -1,6 +1,6 @@
+const Discord = require('discord.js');
 exports.run = (client, message) => {
-  
-  const Discord = require('discord.js');
+
     var e = new Discord.RichEmbed()
    
     .setAuthor("Greep - Guild Stats",message.client.avatarURL)

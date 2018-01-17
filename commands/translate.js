@@ -1,7 +1,7 @@
+const Discord = require('discord.js');
+const transl = require('google-translate-api');
 exports.run = (client, message) => {
-  
-  const Discord = require('discord.js');
-  const transl = require('google-translate-api');
+
     let words = message.content.split(" ").slice(1).join(" ");
 
   transl(words, {to: 'en'}).then(res => {
@@ -16,7 +16,7 @@ exports.run = (client, message) => {
      .setThumbnail(`https://cdn.discordapp.com/attachments/398185503045976064/402890696643706902/Translate_White.png`)
      .setColor('#ECEDEE');
  
-    message.channel.send(embed)
+   message.channel.send(embed)
 
   }).catch(err => {
   

@@ -1,10 +1,6 @@
-exports.run = (client, message) => {
+const Discord = require('discord.js');
+exports.run = (client, message, args) => {
   
-  let messageArray = message.content.split(/\s+/g);
-  
-  let args = messageArray.slice(1);
-  
-  const Discord = require('discord.js');
     var e = new Discord.RichEmbed()
    
     .setAuthor(message.author.username, message.author.avatarURL)
