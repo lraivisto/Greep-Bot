@@ -9,7 +9,7 @@ exports.run = (client, message, params) => {
     
     new Discord.RichEmbed()
    
-    .setTitle(`Greep - Help`)
+    .setAuthor("Greep - Meme",client.user.avatarURL)
     .setDescription(`\n\nUse \`${settings.prefix}help [commandname]\` for more information about the command.\n\n${client.commands.map(c => `${settings.prefix}**${c.help.name}**${''.repeat(longest - c.help.name.length)} => ${c.help.description}`).join('\n')}`)
     .setColor('#ECEDEE')
     .setThumbnail(`https://cdn.discordapp.com/attachments/398185503045976064/402872301777059840/Help_PNG.png`)
