@@ -14,7 +14,7 @@ exports.run = (client, message) => {
     
     const embed = new Discord.RichEmbed()
     
-       .setTitle(`Greep - Urban dictionary`)
+       .setAuthor("Greep - Urban dictionary",client.user.avatarURL)
        .addField(`Searched: `,`*\`${entries[0].word}\`*`)
        .addField(`Definition: `,`*\`${entries[0].definition}\`*`)
        .addField(`Usage: `,`*\`${entries[0].example}\`*`)
