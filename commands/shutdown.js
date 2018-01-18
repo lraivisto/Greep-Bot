@@ -7,7 +7,7 @@ exports.run = async (client, message, args, level) => {// eslint-disable-line no
   
           var e = new Discord.RichEmbed()
   
-          .setTitle(`Greep - Bot Shutdown`)
+          .setAuthor("Greep - Bot Shutdown",client.user.avatarURL)
           .setDescription(`The bot is stopping every module and is now shutting down temporarily, ${message.author.username}`)
           .setColor('#ECEDEE')
           .setFooter(`Success | ${message.createdAt}`)
