@@ -1,6 +1,6 @@
 const {RichEmbed} = require('discord.js');
-const {caseNumber} = require('../utilities/caseNum.js');
-const {parseUser} = require('../utilities/parseUser.js');
+const {caseNumber} = require('../utilities/casenum.js');
+const {parseUser} = require('../utilities/userparse.js');
 const settings = require('../settings.json');
 exports.run = async (client, message, args) => {
   const user = message.mentions.users.first();

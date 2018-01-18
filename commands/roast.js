@@ -28,7 +28,7 @@ exports.run = (client, message) => {
                 "You're so fat you need cheat codes to play Wii Fit.",
                 "You're like the universe, constantly expanding.",
                 "If I throw a stick, will you go away?",
-                "Yeah you're pretty ... pretty stupid",
+                "Yeah you're pretty... pretty stupid",
                 "When I saw your face on TV it said viewer description is advised",
                 "You're so fat the only letters of the alphabet you know are KFC.",
                 "(Phone ringing)... Excuse me it's your village, they want their idiot back",

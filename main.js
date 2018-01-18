@@ -4,7 +4,7 @@ const settings = require('./settings.json');
 const chalk = require('chalk');
 const fs = require('fs');
 const moment = require('moment');
-require('./utilities/eventLoader')(client);
+require('./utilities/eventload')(client);
 
 const log = message => {
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] ${message}`);
