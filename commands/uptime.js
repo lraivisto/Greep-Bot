@@ -56,13 +56,13 @@ exports.run = (client, message) => {
     
     new Discord.RichEmbed()
     
-        .setTitle(`Greep - Uptime`)
-        .setDescription("Here is the bot's uptime.")
+        .setAuthor("Greep - Uptime",client.user.avatarURL)
+        .setDescription("Here is the bot's current uptime.")
         .addField("Days",`\`${days}\``,true)
         .addField("Hours",`\`${hours}\``,true)
         .addField("Minutes",`\`${minutes}\``,true)
         .addField("Seconds",`\`${seconds}\``,true)
-        .setColor('#57007F')
+        .setColor('#ECEDEE')
         .setFooter("Requested by: "+message.author.username, message.author.avatarURL)
         .setThumbnail(client.user.avatarURL))
       
