@@ -9,7 +9,7 @@ exports.run = (client, message, args, level) => { // eslint-disable-line no-unus
   var e = new Discord.RichEmbed()
 
     
-    .setTitle(`Greep - Statistics`)
+    .setAuthor("Greep - Bot Statistics",client.user.avatarURL)
     .setDescription("Here is the bot's current statistics.")
     .addField("Bot Uptime",`\`${duration}\``)
     .addField("Users",`\`${client.users.size.toLocaleString()}\``)
