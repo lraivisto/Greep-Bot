@@ -8,7 +8,7 @@ exports.run = (client, message) => {
   
     const embed = new Discord.RichEmbed()
   
-     .setTitle(`Greep - Google Translate`)
+     .setAuthor("Greep - Google Translate",client.user.avatarURL)
      .addField(`Input: `,`${words}`)
      .addField(`Output:`,`${res.text}`)
      .addField(`Language: `,`${res.from.language.iso}`)
@@ -29,7 +29,7 @@ exports.run = (client, message) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ['gtranslate'],
   permLevel: 0
 };
 
