@@ -127,7 +127,7 @@ exports.run = (client, message) => {
     
       new Discord.RichEmbed()
     
-      .setTitle(`Greep - Meme`)
+      .setAuthor("Greep - Meme",client.user.avatarURL)
       .setDescription(`Your meme, <@!${message.author.id}>!`)
       .setColor(0xECEDEE)
       .setImage(memesanswer));
