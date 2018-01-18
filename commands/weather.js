@@ -10,7 +10,7 @@ exports.run = (client, message) => {
       
       .setTitle("Greep - Weather")
       .addField(`Location: `,`${place}`)
-      .addField(`Tempature: `,`${info.item.condition.temp}**C°**`)
+      .addField(`Tempature: `,`${info.item.condition.temp}C°`)
       .addField(`Condition: `,`${info.item.condition.text}`)
       .setThumbnail(`https://cdn.discordapp.com/attachments/398185503045976064/402874773060845582/Weather_White_PNG.png`)
       .setFooter("Requested by: "+message.author.username, message.author.avatarURL)
@@ -20,7 +20,7 @@ exports.run = (client, message) => {
 
     }).catch(err => {
   
-      message.channel.send('Sorry, but the area you have selected is invalid or is a country, please select a city or town.')
+      message.channel.send('Sorry, but the input you have given me is either invalid, or a country. Please enter a city/town.')
 
     })
   
