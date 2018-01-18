@@ -8,7 +8,7 @@ exports.run = (client, message) => {
       
       const embed = new Discord.RichEmbed()
       
-      .setTitle("Greep - Weather")
+      .setAuthor("Greep - Weather",client.user.avatarURL)
       .addField(`Location: `,`${place}`)
       .addField(`Tempature: `,`${info.item.condition.temp}C°`)
       .addField(`Condition: `,`${info.item.condition.text}`)
