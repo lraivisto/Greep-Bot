@@ -3,7 +3,7 @@ exports.run = (client, message) => {
 
     var e = new Discord.RichEmbed()
    
-    .setAuthor("Greep - Guild Stats",message.client.avatarURL)
+    .setAuthor("Greep - Guild Stats",client.user.avatarURL)
     .setDescription(`Here are your requested guild stats, ${message.author.username}`)
     .addField("Guild name:",message.guild.name)
     .addField("Guild region:",message.guild.region)
