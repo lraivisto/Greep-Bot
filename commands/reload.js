@@ -16,7 +16,7 @@ exports.run = (client, message, args) => {
   if (!command) {
     return message.channel.send(    new Discord.RichEmbed()
     
-        .setTitle(`Greep - Module Reload`)
+        .setAuthor("Greep - Module Reload",client.user.avatarURL)
         .setDescription(`The module \`${args[0]}\` has not been found.`)
         .setColor('#ECEDEE')
       .setFooter(`Failed | ${message.createdAt}`)
