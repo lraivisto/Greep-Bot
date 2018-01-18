@@ -11,7 +11,7 @@ exports.run = async (client, message, args) => {
   message.channel.send(
   
     new Discord.RichEmbed()
-                        .setTitle("Greep - User Avatar")
+                        .setAuthor("Greep - User Avatar",client.user.avatarURL)
                         .setDescription(member.user!==message.author?`**<@!${message.author.id}>**\nhere is <@!${member.user.id}>'s avatar.`:`<@!${message.author.id}> avatar.`)
                         .setColor('#ECEDEE')
                         .setImage(avataruser)
