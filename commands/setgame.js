@@ -19,7 +19,7 @@ exports.run = (client, message) => {
   
           var e = new Discord.RichEmbed()
   
-          .setAuthor("Game changed!")
+          .setAuthor("Game changed!",client.user.avatarURL)
           .setDescription("Status has been successfully changed")
           .addField(`Game status set to`,`\`${args.join(" ")}\``)
           .setColor('#ECEDEE')
