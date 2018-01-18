@@ -8,7 +8,7 @@ exports.run = (client, message) => {
   messageping.then(m => m.edit(
   
     embed
-    .setTitle(`Greep - Ping Statistics`)
+    .setAuthor("Greep - Ping Statistics",client.user.avatarURL)
     .setDescription(`Here are the bot's current ping statistics!`)
     .setColor(0xECEDEE)
     .addField("Latency",`\`${m.createdTimestamp - message.createdTimestamp}ms\``,true)
