@@ -1,8 +1,8 @@
+const Discord = require('discord.js');
+var dice =['1','2','3','4','5','6']
+var dicer =dice[Math.floor(Math.random()*dice.length)];
 exports.run = (client, message) => {
-
-  var dice =['1','2','3','4','5','6']
-  var dicer =dice[Math.floor(Math.random()*dice.length)];
-   const Discord = require('discord.js');
+ 
     var e = new Discord.RichEmbed()
    
     .setAuthor("Greep - Dice",client.user.avatarURL)
@@ -26,6 +26,6 @@ exports.conf = {
 
 exports.help = {
   name: 'dice',
-  description: 'role the dice',
+  description: 'Role the dice.',
   usage: 'dice'
 }
