@@ -1,7 +1,7 @@
 const settings = require('../settings.json');
+const Discord = require('discord.js');
+const embed = new Discord.RichEmbed();
 exports.run = (client, message, params) => {
-  const Discord = require('discord.js');
-  const embed = new Discord.RichEmbed();
   if (!params[0]) {
     const commandNames = Array.from(client.commands.keys());
     const longest = commandNames.reduce((long, str) => Math.max(long, str.length), 0);
