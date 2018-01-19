@@ -7,7 +7,7 @@ exports.run = (client, message) => {
     .setDescription(`Here are your requested guild stats, ${message.author.username}`)
     .addField("Guild name:",message.guild.name)
     .addField("Guild region:",message.guild.region)
-    .addField("Guild owner:",message.guild.owner.user.username)
+    .addField("Guild owner:",message.guild.owner.user.tag)
     .addField("Guild icon (URL):",message.guild.iconURL)
     .addField("Guild ID:",message.guild.id)
     .addField("Guild members:",message.guild.memberCount)
