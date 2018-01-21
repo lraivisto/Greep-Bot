@@ -9,12 +9,13 @@ exports.run = (client, message, params) => {
     
     new Discord.RichEmbed()
    
-    .setAuthor("Greep - Meme",client.user.avatarURL)
-    .setDescription(`\n\nUse \`${settings.prefix}help [commandname]\` for more information about the command.\n\n${client.commands.map(c => `${settings.prefix}**${c.help.name}**${''.repeat(longest - c.help.name.length)} => ${c.help.description}`).join('\n')}`)
+    .setAuthor("Greep - Help",client.user.avatarURL)
+    .setDescription(`\n\nUse \`${settings.prefix}help [commandname]\` for more information about the command.\n**Commands**\n\n${client.commands.map(c => `${settings.prefix}**${c.help.name}**${''.repeat(longest - c.help.name.length)} **❯❯** ${c.help.description}`).join('\n')}`)
     .setColor('#ECEDEE')
     .setThumbnail(`https://cdn.discordapp.com/attachments/398185503045976064/402872301777059840/Help_PNG.png`)
       .setFooter("Requested by: "+message.author.tag, message.author.avatarURL)
    )
+ 
   } else {
     let command = params[0];
     if (client.commands.has(command)) {
@@ -24,7 +25,7 @@ exports.run = (client, message, params) => {
     new Discord.RichEmbed()
    
     .setTitle(`Command Help`)
-    .setDescription(`**${command.help.name}**=> \n${command.help.description}\n**command usage** => ${command.help.usage}`)
+    .setDescription(`**${command.help.name}** **❯❯** \n${command.help.description}\n**command usage** **❯❯** ${command.help.usage}`)
     .setColor('#ECEDEE')
     .setThumbnail(client.user.avatarURL)
    )
@@ -44,3 +45,4 @@ exports.help = {
   description: 'Displays all the available commands for your permission level.',
   usage: 'help [command]'
 };
+
