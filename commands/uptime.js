@@ -64,7 +64,7 @@ exports.run = (client, message) => {
         .addField("Seconds",`\`${seconds}\``,true)
         .setColor('#ECEDEE')
         .setFooter("Requested by: "+message.author.username, message.author.avatarURL)
-        .setThumbnail(client.user.avatarURL))
+        .setThumbnail(`https://i.imgur.com/UrEH7Bz.png`))
       
 
 }}

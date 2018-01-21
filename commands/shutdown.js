@@ -11,7 +11,7 @@ exports.run = async (client, message, args, level) => {// eslint-disable-line no
           .setDescription(`The bot is stopping every module and is now shutting down temporarily, ${message.author.username}`)
           .setColor('#ECEDEE')
           .setFooter(`Success | ${message.createdAt}`)
-          .setThumbnail(`https://cdn.discordapp.com/attachments/398185503045976064/402893358655340554/Shutdown_PNG_White.png`)
+          .setThumbnail(`https://i.imgur.com/GBQOCkh.png`)
   
           await message.channel.send("",{embed:e});
     

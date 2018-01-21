@@ -143,6 +143,6 @@ exports.conf = {
 
 exports.help = {
   name: 'meme',
-  description: 'View e meme.',
+  description: 'View a totally random meme.',
   usage: 'meme'
 }

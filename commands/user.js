@@ -14,7 +14,7 @@ exports.run = (client, message) => {
     .addField("User Avatar in URL",member.user.avatarURL)
     .setFooter("Requested by: "+message.author.username, message.author.avatarURL)
     .setColor('#ECEDEE')
-    .setThumbnail(`https://cdn.discordapp.com/attachments/398185503045976064/402889511715078144/White_User_PNG.png`)
+    .setThumbnail(`https://i.imgur.com/MRgN6Jf.png`)
    
     message.channel.send("",{embed:e});
 }

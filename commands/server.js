@@ -15,7 +15,7 @@ exports.run = (client, message) => {
     .addField("Guild channel count:",message.guild.channels.filter(channels => channels).size)
     .addField("Guild created at:",message.guild.createdAt)
     .setColor('#ECEDEE')
-    .setThumbnail(`https://cdn.discordapp.com/attachments/398185503045976064/402891300195794944/server_white.png`)
+    .setThumbnail(`https://i.imgur.com/9IkHVQJ.png`)
    
     message.channel.send("",{embed:e});
     

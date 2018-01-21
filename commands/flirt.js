@@ -1,4 +1,5 @@
-const Discord = require('discord.js');
+  const Discord = require('discord.js');
+
 exports.run = (client, message) => {
    
     var pickups=["Are you a magician? Because whenever I look at you, everyone else disappears!",

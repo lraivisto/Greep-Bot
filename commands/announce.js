@@ -15,7 +15,7 @@ exports.run = (client, message) => {
     .setDescription(args.join(" "))
     .setColor('#ECEDEE')
     .setFooter(`Server Announcement | ${message.createdAt}`)
-    .setThumbnail(`https://cdn.discordapp.com/attachments/398185503045976064/402904092491644939/shout_white_png.png`)
+    .setThumbnail()
    
     message.channel.send("",{embed:e});
     

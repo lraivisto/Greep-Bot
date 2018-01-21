@@ -24,7 +24,7 @@ exports.run = (client, message) => {
           .addField(`Game status set to`,`\`${args.join(" ")}\``)
           .setColor('#ECEDEE')
           .setFooter(`Success | ${message.createdAt}`)
-          .setThumbnail(`https://cdn.discordapp.com/attachments/398185503045976064/402892855011704843/Chose_PNG_White.png`)
+          .setThumbnail(`https://i.imgur.com/OsKgQ3g.png`)
    
   message.channel.send("",{embed:e});  
     

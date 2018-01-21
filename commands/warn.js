@@ -15,7 +15,7 @@ exports.run = async (client, message, args) => {
   .setColor(0xECEDEE)
   .setTitle("Greep - Moderation")
   .setTimestamp()
-  .setDescription(`**Actions:** Warning\n**Target:** ${user.tag}\n**Moderator:** ${message.author.tag}\n**Reason:** ${reason}`)
+  .setDescription(`**Action:** Warning\n**Target:** ${user.tag}\n**Moderator:** ${message.author.tag}\n**Reason:** ${reason}`)
   .setFooter(`Case ${caseNum}`);
   return client.channels.get(modlog.id).send({embed});
 };

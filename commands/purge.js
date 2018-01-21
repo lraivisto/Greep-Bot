@@ -11,7 +11,7 @@ const messagecount = parseInt(args.join(' '));
    
     .setAuthor("Greep - Purge",client.user.avatarURL)
     .addField("Messages Purged:",args[0])
-    .setThumbnail('https://cdn.discordapp.com/attachments/398185503045976064/403910716572041216/Delete_White_PNG.png')
+    .setThumbnail('https://i.imgur.com/ZrYz5GU.png')
     .setColor('#ECEDEE')
     .setFooter(`Success | ${message.createdAt}`)
 
