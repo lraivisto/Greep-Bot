@@ -18,7 +18,7 @@ exports.run = (client, message) => {
        .addField(`Searched: `,`*\`${entries[0].word}\`*`)
        .addField(`Definition: `,`*\`${entries[0].definition}\`*`)
        .addField(`Usage: `,`*\`${entries[0].example}\`*`)
-       .setThumbnail(`https://cdn.discordapp.com/attachments/398185503045976064/402873844747993088/Urban_Dictionary_White_PNG.png`)
+       .setThumbnail(`https://i.imgur.com/Cvl1b4K.png`)
        .setFooter("Requested by: "+message.author.username, message.author.avatarURL)
        .setColor('#ECEDEE')
     

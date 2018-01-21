@@ -13,7 +13,7 @@ exports.run = (client, message) => {
      .addField(`Output:`,`${res.text}`)
      .addField(`Language: `,`${res.from.language.iso}`)
      .setFooter("Requested by: "+message.author.username, message.author.avatarURL)
-     .setThumbnail(`https://cdn.discordapp.com/attachments/398185503045976064/402890696643706902/Translate_White.png`)
+     .setThumbnail(`https://i.imgur.com/1rbQ9o8.png`)
      .setColor('#ECEDEE');
  
    message.channel.send(embed)
@@ -35,6 +35,6 @@ exports.conf = {
 
 exports.help = {
   name: 'translate',
-  description: 'Translate some stuff.',
+  description: 'Translate the input you give to the bot.',
   usage: 'translate [word or sentence]'
 }

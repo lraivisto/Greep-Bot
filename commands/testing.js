@@ -13,6 +13,6 @@ exports.conf = {
 
 exports.help = {
   name: 'testing',
-  description: 'This is a command jost for fun.',
+  description: 'This is a base-command that helps me test stuff, doesn\'t do anything to you guys though.',
   usage: 'testing'
 }

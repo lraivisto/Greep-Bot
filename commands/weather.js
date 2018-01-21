@@ -12,7 +12,7 @@ exports.run = (client, message) => {
       .addField(`Location: `,`${place}`)
       .addField(`Tempature: `,`${info.item.condition.temp}C°`)
       .addField(`Condition: `,`${info.item.condition.text}`)
-      .setThumbnail(`https://cdn.discordapp.com/attachments/398185503045976064/402874773060845582/Weather_White_PNG.png`)
+      .setThumbnail(`https://i.imgur.com/I3C1rQE.png`)
       .setFooter("Requested by: "+message.author.username, message.author.avatarURL)
       .setColor('#ECEDEE')
       

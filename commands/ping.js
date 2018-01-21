@@ -13,7 +13,7 @@ exports.run = (client, message) => {
     .setColor(0xECEDEE)
     .addField("Latency",`\`${m.createdTimestamp - message.createdTimestamp}ms\``,true)
     .addField("API Latency",`\`${Math.round(client.ping)}ms\``,true)      .setFooter("Pinged by: "+message.author.username, message.author.avatarURL)
-    .setThumbnail(`https://cdn.discordapp.com/attachments/398185503045976064/402869793725612042/Ping_Pong_PNG_White.png`)))
+    .setThumbnail(`https://i.imgur.com/OzBghri.png`)))
       }
 
 exports.conf = {

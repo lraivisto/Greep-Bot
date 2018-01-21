@@ -7,7 +7,7 @@ exports.run = (client, message, args) => {
     .setDescription(args.join(" "))
     .setColor("#ECEDEE")
     .setFooter(message.createdAt)
-    .setThumbnail(`https://cdn.discordapp.com/attachments/398185503045976064/403191318429564929/Speach_Buuble_White_PNG.png`)
+    .setThumbnail(`https://i.imgur.com/bXAYrUz.png`)
    
     message.channel.send("",{embed:e});
     

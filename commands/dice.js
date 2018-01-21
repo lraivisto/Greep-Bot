@@ -7,7 +7,7 @@ exports.run = (client, message) => {
    
     .setAuthor("Greep - Dice",client.user.avatarURL)
     .setDescription(`You have rolled a dice, the result is \`${dicer}\``)
-    .setThumbnail('https://cdn.discordapp.com/attachments/398185503045976064/402869354779377664/White_Dice_PNG.png')
+    .setThumbnail('https://i.imgur.com/k2ZNmo1.png')
     .setColor('#ECEDEE')
     .setFooter("Requested by: "+message.author.username, message.author.avatarURL)
 

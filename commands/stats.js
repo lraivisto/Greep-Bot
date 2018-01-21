@@ -11,6 +11,9 @@ exports.run = (client, message, args, level) => { // eslint-disable-line no-unus
     
     .setAuthor("Greep - Bot Statistics",client.user.avatarURL)
     .setDescription("Here is the bot's current statistics.")
+    .addField("Author",`\`Protocol#5817\``)
+    .addField("Bot Client ID",`\`400709247115067392\``)
+    .addField("Official Guild",`https://discord.gg/C26rGtA`)
     .addField("Bot Uptime",`\`${duration}\``)
     .addField("Users",`\`${client.users.size.toLocaleString()}\``)
     .addField("Channels",`\`${client.channels.size.toLocaleString()}\``)
@@ -20,7 +23,7 @@ exports.run = (client, message, args, level) => { // eslint-disable-line no-unus
     .addField("Memory Usage",`\`${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.floor(os.totalmem() / 1024**3 * 100) / 100}GB\``)
     .addField("Server OS",`\`${os.type()}\``)
     .setColor('#ECEDEE')
-    .setThumbnail(`https://cdn.discordapp.com/attachments/398185503045976064/402893841688035329/Statistics_White_PNG.png`)
+    .setThumbnail(`https://i.imgur.com/9FtWWxf.png`)
     .setFooter("Requested by: "+message.author.username, message.author.avatarURL)
 
     message.channel.send("",{embed:e});

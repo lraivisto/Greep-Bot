@@ -34,7 +34,7 @@ exports.run = (client, message, args) => {
         .setDescription(`The module \`${command}\` has been reloaded.`)
         .setColor('#ECEDEE')
         .setFooter(`Success | ${message.createdAt}`)
-        .setThumbnail(`https://cdn.discordapp.com/attachments/398185503045976064/402892450533998592/Reload_PNG_White.png`))
+        .setThumbnail(`https://i.imgur.com/yO4ctcr.png`))
      //\`${command}\`\n\`\`\`${e.stack}\`\`\` 
           })
           .catch(e => {
