@@ -2,36 +2,33 @@ const settings = require('../settings.json');
 const Discord = require('discord.js');
 
 exports.run = (client, message) => {
-        if(message.author.id!='396003871434211339'){
-                message.channel.send("Only the founder can execute this.") }
-        else {
-          let messageArray = message.content.split(/\s+/g);
+  if(message.author.id!='396003871434211339')
+  {
+    message.channel.send("Only the founder can execute this.") 
+  }
+  else 
+  {
+    let messageArray = message.content.split(/\s+/g);
+    let args = messageArray.slice(1);
 
-  let args = messageArray.slice(1);
-  
-  client.user.setPresence({
-    status: settings.status,
-    game: {
-      name: args[0],
-      type: 0
-    }
-  });
-  
-          var e = new Discord.RichEmbed()
-  
-          .setAuthor("Game changed!",client.user.avatarURL)
-          .setDescription("Status has been successfully changed")
-          .addField(`Game status set to`,`\`${args.join(" ")}\``)
-          .setColor('#ECEDEE')
-          .setFooter(`Success | ${message.createdAt}`)
-          .setThumbnail(`https://i.imgur.com/OsKgQ3g.png`)
-   
-  message.channel.send("",{embed:e});  
-    
-          message.delete();
+    client.user.setPresence({
+      status: settings.status,
+      game: {
+        name: args[0],
+        type: 0
+      }
+    });
 
-        }
-  
+    var e = new Discord.RichEmbed()
+    .setAuthor("Game changed!",client.user.avatarURL)
+    .setDescription("Status has been successfully changed")
+    .addField(`Game status set to`,`\`${args.join(" ")}\``)
+    .setColor('#ECEDEE')
+    .setFooter(`Success | ${message.createdAt}`)
+    .setThumbnail(`https://i.imgur.com/OsKgQ3g.png`)
+    message.channel.send("",{embed:e});  
+    message.delete();
+  }
 };
 exports.conf = {
   enabled: true,
