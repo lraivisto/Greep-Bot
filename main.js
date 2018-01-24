@@ -24,6 +24,31 @@ fs.readdir('./commands/', (err, files) => {
     });
   });
 });
+client.on('guildCreate', guild => {
+  const snek = require('snekfetch')
+
+snek.post(`https://botsfordiscord.com/api/v1/bots/400709247115067392`)
+  .set('Authorization', "985255e064d56a8c13f33d95de07f0167b8feeb537aea65ca27caae2336fd6d3af2a41e10e6823887b837045f1246738209179ff3bdcd331d3da5594741cb101")
+  .send({
+    server_count: client.guilds.size
+  })
+  .then(() => console.log('Someone has invited me to a guild, so I have updated discord bot stats.'))
+  .catch(err => console.error(`Whoops something went wrong why trying to update server count over botsfordiscord.com : ${err.body}`));
+  
+});
+
+client.on('guildDelete', guild => {
+    const snek = require('snekfetch')
+
+snek.post(`https://botsfordiscord.com/api/v1/bots/400709247115067392`)
+  .set('Authorization', "985255e064d56a8c13f33d95de07f0167b8feeb537aea65ca27caae2336fd6d3af2a41e10e6823887b837045f1246738209179ff3bdcd331d3da5594741cb101")
+  .send({
+    server_count: client.guilds.size
+  })
+  .then(() => console.log('Someone has deleted me from a guild, so I have updated discord bot stats.'))
+  .catch(err => console.error(`Whoops something went wrong why trying to update server count over botsfordiscord.com : ${err.body}`));
+  
+});
 
 client.reload = command => {
   return new Promise((resolve, reject) => {
