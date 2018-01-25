@@ -20,6 +20,16 @@ module.exports = message => {
   
   }
   
+    if(message.channel.type==="text"&&!message.channel.permissionsFor(message.guild.me).has('SEND_MESSAGES'))
+    
+    {
+    
+      message.author.send("It appears that I don't have permission to talk in the server/channel you tried to talk to me, please change it or notify an admin.");
+      
+      return;
+    
+    }
+  
   if (cmd) {
   
     if (perms < cmd.conf.permLevel) return;
