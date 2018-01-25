@@ -3,6 +3,7 @@ const {caseNumber} = require('../utilities/casenum.js');
 const {parseUser} = require('../utilities/userparse.js');
 const settings = require('../settings.json');
 exports.run = async (client, message, args) => {
+ 
   const user = message.mentions.users.first();
   parseUser(message, user);
   const modlog = client.channels.find('name', 'mod-log');
