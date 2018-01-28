@@ -4,6 +4,7 @@ const settings = require('./settings.json');
 const chalk = require('chalk');
 const fs = require('fs');
 const moment = require('moment');
+const db = require('quick.db');
 require('./utilities/eventload')(client);
 
 const log = message => {
@@ -24,6 +25,8 @@ fs.readdir('./commands/', (err, files) => {
     });
   });
 });
+
+
 client.on('guildCreate', guild => {
   const snek = require('snekfetch')
 
